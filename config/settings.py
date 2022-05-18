@@ -127,4 +127,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# django will use our customized authentication system
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# after successful login, user will be redirected to home page
+LOGIN_REDIRECT_URL = 'pages:home'
+ 
+# after loging out, user well be redirected to homepage
+LOGOUT_REDIRECT_URL = 'pages:home'
