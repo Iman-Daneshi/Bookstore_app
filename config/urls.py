@@ -22,6 +22,8 @@ urlpatterns = [
     # pages path
     path('', include('pages.urls')),
     # accounts path
-    path('accounts/', include('allauth.urls'))
+    path('accounts/', include('allauth.urls')),
+    # books path
+    path('books/', include('books.urls')),
     
 ]
