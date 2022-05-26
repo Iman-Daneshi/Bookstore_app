@@ -329,6 +329,7 @@ __pycache__/
 books_env/
 __pycache__/
 *.sqlite3
+docker-compose-prod.yml
 
 # Cake - Uncomment if you are using it
 # tools/**

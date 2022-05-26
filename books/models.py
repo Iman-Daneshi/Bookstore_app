@@ -11,6 +11,9 @@ class Book(models.Model):
     cover = models.ImageField(upload_to = 'covers/', blank=True)
 
     class Meta:
+        indexes = [ # Indexing is a common technique for speeding up database performance. This change would need to be added via a migration file and migrated.
+            models.Index(fields=['id'], name='id_index'),
+        ]
         permissions = [
             ('special_status', 'Can read all books'),
         ]
