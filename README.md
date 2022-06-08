@@ -1,0 +1,1 @@
+This is a bookstore app. It benefits from a customised authentication system using allauth thirdparty app. users can't see list of books nor search them unless they regiseter in the site and sign in. i aslo used Crispy-forms to format pages.The whole project was dockerized and successfully deployed in Heroku host.
